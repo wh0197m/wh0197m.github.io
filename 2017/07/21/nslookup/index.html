@@ -9,7 +9,7 @@
     <!-- Title -->
     
         <title>
-            程序托兒所
+            nslookup使用 - 程序托兒所
         </title>
 
         <!--Favicon-->
@@ -84,41 +84,27 @@
 </div>
 
                 <div class="container">
-                    
-    <div class="row gap">
-    <div class="col-lg-4 col-md-6 col-12">
-        <div class="hovereffect">
-            <a href="/2017/07/21/nslookup/">
-               <img class="img-fluid portfolio-img" src="/../images/nslookup.png" alt="nslookup使用">
-                <div class="overlay">
-                <span class="overlay-text">
-                  nslookup使用
-                  <hr>
-                  Jul 21 2017
-                </span>
-               </div>
-            </a>
-        </div>
-    </div>
+                    <div class="col-12 mb-4">
+    <img class="img-fluid project-img" src="/../images/nslookup.png" alt="nslookup使用">
 </div>
-
-    <div class="row gap">
-    <div class="col-lg-4 col-md-6 col-12">
-        <div class="hovereffect">
-            <a href="/2017/07/19/寫博周知/">
-               <img class="img-fluid portfolio-img" src="/../images/database.png" alt="寫博原點">
-                <div class="overlay">
-                <span class="overlay-text">
-                  寫博原點
-                  <hr>
-                  Jul 19 2017
-                </span>
-               </div>
-            </a>
-        </div>
-    </div>
+<div class="col-12 col-lg-8 offset-lg-2 mt-4 text-center post-page">
+    <h1>
+        nslookup使用
+    </h1>
+    <hr>
+    <span class="wh01am-date">
+      Jul 21 2017
+    </span>
 </div>
+<div class="col-12 col-lg-8 offset-lg-2 mt-4 portfolio-content">
+    <p>nslookup在做完成域名解析配置之後，用來檢查DNS解析是否正確，可以檢查正向解析的同時也可以檢查反向解析。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 正向解析</span></div><div class="line">nslookup wh01am.github.io</div><div class="line"><span class="comment"># 反向解析</span></div><div class="line">nslookup 8.8.8.8</div></pre></td></tr></table></figure></p>
+<p>當使用nslookup不指定參數的時候，默認查詢的是域名解析的A記錄，那麼通過加上<code>-query=type</code>這個參數后，可以得到不同記錄類型的信息，譬如查詢<code>MX</code>記錄信息<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">nslookup -query=MX wh0197m.github.io</div><div class="line">// 得到如下信息</div><div class="line">Server:		10.143.22.116</div><div class="line">Address:	10.143.22.116<span class="comment">#53</span></div><div class="line"></div><div class="line">Non-authoritative answer:</div><div class="line">wh0197m.github.io	canonical name = github.map.fastly.net.</div><div class="line"></div><div class="line">Authoritative answers can be found from:</div><div class="line">fastly.net</div><div class="line">	origin = ns1.fastly.net</div><div class="line">	mail addr = hostmaster.fastly.com</div><div class="line">	serial = 2017052201</div><div class="line">	refresh = 3600</div><div class="line">	retry = 600</div><div class="line">	expire = 604800</div><div class="line">	minimum = 30</div></pre></td></tr></table></figure></p>
 
+</div>
+<!-- UY BEGIN -->
+<div class="col-12 col-lg-8 offset-lg-2 mt-4 portfolio-content" id="uyan_frame"></div>
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2139508"></script>
+<!-- UY END -->
 
                 </div>
         </div>
